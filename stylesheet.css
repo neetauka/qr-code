@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/* variables */
+:root {
+    /*White*/
+    --White: hsl(0, 0%, 100%);
+    /*Light Gray */
+    --Light-Gray: hsl(212, 45%, 89%);
+    /*Grayish blue*/
+    --Grayish-blue: hsl(220, 15%, 55%);
+    /* dark-blue */
+    --Dark-blue: hsl(218, 44%, 22%);
+}
+
+/* resets-- this is for default setting of html documents */
+body {
+    overflow: hidden;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+
+    background-color: var(--Light-Gray);
+    /* padding: 0 25px; */
+}
+
+/* fonts  */
+@font-face {
+    font-family: "Outfit";
+    src: url(font/Outfit-Regular.ttf);
+    font-family: "Outfit Bold";
+    src: url(font/Outfit-Bold.ttf);
+}
+
+h1 {
+    font-family: "Outfit Bold";
+    font-size: 1.28em;
+    text-align: center;
+
+}
+
+p {
+    font-family: "Outfit";
+    text-align: center;
+    font-size: .9em;
+    width: 250px;
+    margin: 0 20px;
+    padding: 10px 15px;
+}
+
+/* desktop styles  */
+@media screen and (min-width:1440px) {
+
+    .box {
+        border-radius: 15px;
+        height: 500px;
+        width: 20%;
+        margin: 6% auto;
+        background-color: var(--White);
+    }
+
+    .qr-code {
+        height: 300px;
+        width: 300px;
+        border-radius: 15px;
+        margin: 2% 4%;
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+
+    }
+
+    .heading {
+        width: 260px;
+        margin: 0 20px;
+        padding: 10px 15px;
+    }
+}
